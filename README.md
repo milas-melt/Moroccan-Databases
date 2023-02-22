@@ -1,6 +1,5 @@
 # Moroccan-Databases
-[OPEN SOURCE - PLEASE FEEL FREE TO JOIN]
-Moroccan Databases are scattered over the web. This is a humble attempt to gather them in one repo. Feel free to join :)
+Moroccan Databases are scattered over the web. This is a humble attempt to gather them in one repo. **Feel free to join** :)
 
 ## Databases
 Foreign Trade Database | Office des changes - oc.gov.ma (no date). Available at: https://www.oc.gov.ma/en/e-services/foreign-trade-database (Accessed: February 22, 2023). 
