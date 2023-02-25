@@ -18,6 +18,7 @@ Also, feel free to improve the website and share the repo/website :)
 -- add datasets here --
 
 ## Web scraping projects
+-- add web scraping projects here --
 
 ## Why contribute
 Through many initiatives such as [the new development model](https://www.hcp.ma/Nouveau-modele-de-developpement_r594.html), Morocco has expressed its interest in bringing data in the center of its decisions and improving the country's R&D. Centralising data in one place can reveal a lot about the untapped potential of Morocco. This is an attempt to discover the root causes of problems in order to identify appropriate solutions. Whether you're an activist, an entrepreneur, a financial analyst or just a curious person, we hope that you fill find value in this repo and share your insights with others.
