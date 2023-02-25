@@ -15,7 +15,7 @@ Also, feel free to improve the website and share the repo/website :)
 - Institutional website of the High Commission for Planning of the Kingdom of Morocco (no date) Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc. Available at: https://www.hcp.ma/ (Accessed: February 24, 2023). 
 
 ## Datasets
-- World bank data for Morocco; (Accessed: February 25, 2023) Data. Available at: https://data.worldbank.org/country/MA (Accessed: February 25, 2023). 
+- World bank data for Morocco; (no date) Data. Available at: https://data.worldbank.org/country/MA (Accessed: February 25, 2023). 
 
 ## Web scraping projects
 -- add web scraping projects here --
