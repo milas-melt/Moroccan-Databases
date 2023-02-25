@@ -2,7 +2,7 @@
 Moroccan Databases are scattered over the web. This is a humble attempt to gather them in one repo. **Feel free to join** :)
 
 ## Website
-)[Click here to access the website]moroccodata.netlify.app).
+[Click here to access the website](moroccodata.netlify.app).
 (feel free to improve it)
 
 ## Databases
