@@ -1,5 +1,5 @@
 # Moroccan-Databases
-Moroccan Databases are scattered over the web. This is a humble attempt to gather them in one repo. **Feel free to join** :)
+Moroccan Databases are scattered all over the web. This is a humble attempt to gather them in one repo. **Feel free to join** :)
 
 ## Website
 [Click here to access the website](https://moroccodata.netlify.app/).
