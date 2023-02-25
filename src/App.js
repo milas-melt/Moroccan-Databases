@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import Home from "./routes/home";
-import Contact from "./routes/contact";
 import GetNotified from "./routes/get-notified";
 import ErrorPage from "./routes/error-page";
 
@@ -11,10 +10,6 @@ export default function App() {
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="data-access" element={<GetNotified />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="*" element={<ErrorPage />} />
-                <Route path="*" element={<Navigate replace to="/404" />} />
-
                 <Route path="/page-not-found" element={<ErrorPage />} />
                 <Route
                     path="*"

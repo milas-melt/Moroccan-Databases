@@ -187,10 +187,15 @@ export default function Home() {
                                 Get started
                             </Link>
                             <Link
-                                to="/contact"
+                                to="#"
                                 className="text-sm font-semibold leading-6 text-white"
+                                onClick={(e) => {
+                                    window.location.href =
+                                        "mailto:databasemorocco@gmail.com";
+                                    e.preventDefault();
+                                }}
                             >
-                                Contact me <span aria-hidden="true">→</span>
+                                Email us<span aria-hidden="true">→</span>
                             </Link>
                         </div>
                     </div>
