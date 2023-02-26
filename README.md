@@ -11,8 +11,10 @@ Note to devs: A custom "page not found" route has been set with react-router-dom
 Also, feel free to improve the website and share the repo/website :)
 
 ## Databases
+- Morocco's open data portal (no date) ACCUEIL | Portail de l'Open Data au Maroc. Available at: https://data.gov.ma/ (Accessed: February 26, 2023). 
 - Foreign Trade Database | Office des changes - oc.gov.ma (no date). Available at: https://www.oc.gov.ma/en/e-services/foreign-trade-database (Accessed: February 22, 2023). 
-- Institutional website of the High Commission for Planning of the Kingdom of Morocco (no date) Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc. Available at: https://www.hcp.ma/ (Accessed: February 24, 2023). 
+- Institutional website of the High Commission for Planning of the Kingdom of Morocco (no date) Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc. Available at: https://www.hcp.ma/ (Accessed: February 24, 2023).
+- Modeling simulation &amp; Data analysis, UM6P (no date) MSDA. Available at: https://msda.um6p.ma/msda_datasets (Accessed: February 26, 2023). 
 
 ## Datasets
 - World bank data for Morocco; (no date) Data. Available at: https://data.worldbank.org/country/MA (Accessed: February 25, 2023). 
@@ -28,7 +30,7 @@ Through many initiatives such as [the new development model](https://www.hcp.ma/
 - Include websites that could be used for web scraping.
 - Any other idea? Go for it!
 
-Please try to cite the source using harvard format. [Click here to access a harvard citation generator](https://www.citethisforme.com/cite/website).
+Please try when possible to cite the source using harvard format. [Click here to access a harvard citation generator](https://www.citethisforme.com/cite/website).
 
 Many thanks.
 
