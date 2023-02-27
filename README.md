@@ -19,6 +19,7 @@ Also, feel free to improve the website and share the repo/website :)
 
 ## Datasets
 - World bank data for Morocco; (no date) Data. Available at: https://data.worldbank.org/country/MA (Accessed: February 25, 2023). 
+- United Nations | Data Portal, Morocco's population data (no date) United Nations. United Nations. Available at: https://population.un.org/dataportal/ (Accessed: February 27, 2023). 
 
 ## Web scraping projects
 -- add web scraping projects here --
