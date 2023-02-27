@@ -2,9 +2,7 @@
 Moroccan Databases are scattered all over the web. This is a humble attempt to gather them in one repo. **Feel free to join** :)
 
 ## Website
-[Click here to access the website](https://moroccodata.netlify.app/).
-
-Note: if the above link doesn't work, it means that the website is in deployment. Please try www.moroccodata.com instead. If both don't work, please retry in 24 to 48 hours (domain configuration can take some time). If after 48 hours the website don't work, please email databasemorocco@gmail.com. Thanks.
+[Click here to access the website](https://datamorocco.com/).
 
 Note to devs: A custom "page not found" route has been set with react-router-dom. It works on localhost but not on production with netlify. It's possible that netlify overwrites it and the page not found requires additional setting which will be done after the migration on the new domain name aka www.moroccodata.com.
 
