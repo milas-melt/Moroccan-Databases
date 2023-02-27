@@ -191,7 +191,9 @@ export default function GetNotified() {
                             >
                                 Github
                             </Link>{" "}
-                            to access databases from Morocco.
+                            to access databases, datasets and data-related
+                            projects about Morocco. We're updating it
+                            frequently.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             {/* <a
