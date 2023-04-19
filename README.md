@@ -12,11 +12,16 @@ Also, feel free to improve the website. All the code is available on this repo.
 - Institutional website of the High Commission for Planning of the Kingdom of Morocco (no date) Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc. Available at: https://www.hcp.ma/ (Accessed: February 24, 2023).
 - Modeling simulation &amp; Data analysis, UM6P (no date) MSDA. Available at: https://msda.um6p.ma/msda_datasets (Accessed: February 26, 2023). 
 - Undata | United nation datasets with moroccan records ranked by number of records (no date) United Nations. United Nations. Available at: http://data.un.org/Search.aspx?q=morocco (Accessed: February 27, 2023).
-- Morocco's data: 1005 indicators for Morocco. (note that the data does not originate from this source, for more info on the datasets displayed in this website, check their source) (no date) Our World in Data. Available at: https://ourworldindata.org/country/morocco (Accessed: February 27, 2023). 
+- Morocco's data: 1005 indicators for Morocco. (note that the data does not originate from this source, for more info on the datasets displayed in this website, check their source) (no date) Our World in Data. Available at: https://ourworldindata.org/country/morocco (Accessed: February 27, 2023).
+- Morocco - Humanitarian Data Exchange (no date) Humanitarian Data Exchange. Available at: https://data.humdata.org/group/mar (Accessed: March 27, 2023).
 
 ## Datasets
 - World bank data for Morocco; (no date) Data. Available at: https://data.worldbank.org/country/MA (Accessed: February 25, 2023). 
 - United Nations | Data Portal, Morocco's population data (no date) United Nations. United Nations. Available at: https://population.un.org/dataportal/ (Accessed: February 27, 2023). 
+- Morocco's IMF DSBB: International Monetary Fund’s (IMF) Dissemination Standards Bulletin Board (DSBB) | Ministry of Economy and Finance - MEF - Kingdom of Morocco (Last updated on February 28th, 2023) finances.gov.ma. Available at: https://www.finances.gov.ma/en/Pages/home.aspx (Accessed: March 1, 2023).
+
+## Useful websites and articles
+- Kemp, S. (2022) Digital 2022: Morocco - DataReportal – Global Digital Insights, DataReportal. DataReportal – Global Digital Insights. Available at: https://datareportal.com/reports/digital-2022-morocco (Accessed: March 27, 2023).
 
 ## Web scraping projects
 -- add web scraping projects here --
