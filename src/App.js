@@ -1,15 +1,17 @@
 import * as React from "react";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import Home from "./routes/home";
-import GetNotified from "./routes/get-notified";
+import GetNotified from "./routes/data-access";
 import ErrorPage from "./routes/error-page";
+import DataDisplay from "./routes/data-display";
 
 export default function App() {
     return (
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="data-access" element={<GetNotified />} />
+                <Route path="/data-access" element={<GetNotified />} />
+                <Route path="/data-display" element={<DataDisplay />} />
                 <Route path="/page-not-found" element={<ErrorPage />} />
                 <Route
                     path="*"

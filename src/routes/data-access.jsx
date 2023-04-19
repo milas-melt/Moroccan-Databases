@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import NewsletterForm from "../Components/NewsletterForm";
 import "../input.css";
-
 const navigation = [
     { name: "Home", href: "/" },
     { name: "Data access", href: "/data-access" },
     { name: "Data table", href: "/data-display" },
 ];
 
-export default function Home() {
+export default function GetNotified() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
@@ -72,7 +72,7 @@ export default function Home() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12 ">
                         {navigation.map((item) => (
-                            <Link
+                            <Link // <a key={`${item.name}-mobile`} href={item.href} > {item.name} </a>
                                 key={item.name}
                                 to={item.href}
                                 className="text-sm font-semibold leading-6 text-white"
@@ -123,15 +123,19 @@ export default function Home() {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/25">
                                 <div className="space-y-2 py-6">
-                                    {navigation.map((item) => (
-                                        <a
-                                            key={`${item.name}-mobile`}
-                                            href={item.href}
-                                            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))}
+                                    {navigation.map(
+                                        (
+                                            item // <a key={`${item.name}-mobile`} href={item.href} > {item.name} </a>
+                                        ) => (
+                                            <a
+                                                key={`${item.name}-mobile`}
+                                                href={item.href}
+                                                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
+                                            >
+                                                {item.name}
+                                            </a>
+                                        )
+                                    )}
                                 </div>
                                 {/* <div className="py-6">
                                     <a
@@ -164,40 +168,60 @@ export default function Home() {
                     </div>
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            Making data accessible.
+                            We're building it ...
                         </h1>
+
                         <p className="mt-6 text-lg leading-8 text-gray-300">
-                            Through many initiatives such as the new development
-                            model, Morocco has expressed its interest in
-                            bringing data in the center of its decisions and
-                            improving the country's R&D. Centralising data in
-                            one place can reveal a lot about the untapped
-                            potential of Morocco. This is an attempt to discover
-                            the root causes of problems in order to identify
-                            appropriate solutions. Whether you're an activist,
-                            an entrepreneur, a financial analyst or just a
-                            curious person, we hope that you fill find value in
-                            this repo and share your insights with others.
+                            We are still coding the database portal. If you want
+                            to get notified when it's ready, feel free to submit
+                            your email address below. For now, please visit our{" "}
+                            <Link
+                                to="https://github.com/milas-melt/Moroccan-Databases"
+                                className="underline text-white"
+                            >
+                                Github
+                            </Link>{" "}
+                            to access databases, datasets and data-related
+                            projects about Morocco. We're updating it
+                            frequently.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <Link
-                                to="/data-access"
+                            {/* <a
+                                href="#"
                                 className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                             >
                                 Get started
-                            </Link>
-
-                            <Link
-                                to="#"
+                            </a>
+                            <a
+                                href="#"
                                 className="text-sm font-semibold leading-6 text-white"
-                                onClick={(e) => {
-                                    window.location.href =
-                                        "mailto:databasemorocco@gmail.com";
-                                    e.preventDefault();
-                                }}
                             >
-                                Email us<span aria-hidden="true">→</span>
-                            </Link>
+                                Contact me <span aria-hidden="true">→</span>
+                            </a> */}
+                            {/* <form className="mx-auto mt-10 flex w-3/5 gap-x-4">
+                                <label
+                                    htmlFor="email-address"
+                                    className="sr-only"
+                                >
+                                    Email address
+                                </label>
+                                <input
+                                    id="email-address"
+                                    name="email"
+                                    type="email"
+                                    autoComplete="email"
+                                    required
+                                    className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                                    placeholder="Enter your email"
+                                />
+                                <button
+                                    type="submit"
+                                    className="flex-none rounded-md bg-white py-2.5 px-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                                >
+                                    Notify me
+                                </button>
+                            </form> */}
+                            <NewsletterForm />
                         </div>
                     </div>
                 </div>

@@ -2,36 +2,23 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import NewsletterForm from "../Components/NewsletterForm";
 import "../input.css";
-/*
-  This example requires some changes to config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import DataTable from "../Components/DataTable";
 
 const navigation = [
     { name: "Home", href: "/" },
-    { name: "Data access", href: "#" },
+    { name: "Data access", href: "/data-access" },
+    { name: "Data table", href: "/data-display" },
 ];
 
-export default function GetNotified() {
+export default function DataDisplay() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <div className="relative isolate overflow-hidden bg-gray-900">
             <img
                 src="https://images.unsplash.com/photo-1468183654773-77e2f0bb6bf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="moroccan door"
+                alt="Moroccan door"
                 className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-overlay"
             />
             <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -65,15 +52,15 @@ export default function GetNotified() {
                     aria-label="Global"
                 >
                     {/* <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                className="h-8"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                alt=""
-                            />
-                        </a>
-                    </div> */}
+                    <a href="#" className="-m-1.5 p-1.5">
+                        <span className="sr-only">Your Company</span>
+                        <img
+                            className="h-8"
+                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            alt=""
+                        />
+                    </a>
+                </div> */}
                     <div className="flex lg:hidden">
                         <button
                             type="button"
@@ -96,13 +83,13 @@ export default function GetNotified() {
                         ))}
                     </div>
                     {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a
-                            href="#"
-                            className="text-sm font-semibold leading-6 text-white"
-                        >
-                            Log in <span aria-hidden="true">&rarr;</span>
-                        </a>
-                    </div> */}
+                    <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-white"
+                    >
+                        Log in <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div> */}
                 </nav>
                 <Dialog
                     as="div"
@@ -115,13 +102,13 @@ export default function GetNotified() {
                     >
                         <div className="flex items-center justify-between">
                             {/* <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Your Company</span>
-                                <img
-                                    className="h-8"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                    alt=""
-                                />
-                            </a> */}
+                            <span className="sr-only">Your Company</span>
+                            <img
+                                className="h-8"
+                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                alt=""
+                            />
+                        </a> */}
                             <button
                                 type="button"
                                 className="-m-2.5 rounded-md p-2.5 text-gray-400"
@@ -148,94 +135,22 @@ export default function GetNotified() {
                                     ))}
                                 </div>
                                 {/* <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-white hover:bg-gray-400/10"
-                                    >
-                                        Log in
-                                    </a>
-                                </div> */}
+                                <a
+                                    href="#"
+                                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-white hover:bg-gray-400/10"
+                                >
+                                    Log in
+                                </a>
+                            </div> */}
                             </div>
                         </div>
                     </Dialog.Panel>
                 </Dialog>
-                <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                        <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                            Be part of the project.{" "}
-                            <a
-                                href="https://github.com/milas-melt/Moroccan-Databases"
-                                className="font-semibold text-white"
-                            >
-                                <span
-                                    className="absolute inset-0"
-                                    aria-hidden="true"
-                                />
-                                Contribute now{" "}
-                                <span aria-hidden="true">&rarr;</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            We're building it ...
-                        </h1>
-
-                        <p className="mt-6 text-lg leading-8 text-gray-300">
-                            We are still coding the database portal. If you want
-                            to get notified when it's ready, feel free to submit
-                            your email address below. For now, please visit our{" "}
-                            <Link
-                                to="https://github.com/milas-melt/Moroccan-Databases"
-                                className="underline text-white"
-                            >
-                                Github
-                            </Link>{" "}
-                            to access databases, datasets and data-related
-                            projects about Morocco. We're updating it
-                            frequently.
-                        </p>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
-                            {/* <a
-                                href="#"
-                                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                            >
-                                Get started
-                            </a>
-                            <a
-                                href="#"
-                                className="text-sm font-semibold leading-6 text-white"
-                            >
-                                Contact me <span aria-hidden="true">→</span>
-                            </a> */}
-                            {/* <form className="mx-auto mt-10 flex w-3/5 gap-x-4">
-                                <label
-                                    htmlFor="email-address"
-                                    className="sr-only"
-                                >
-                                    Email address
-                                </label>
-                                <input
-                                    id="email-address"
-                                    name="email"
-                                    type="email"
-                                    autoComplete="email"
-                                    required
-                                    className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-                                    placeholder="Enter your email"
-                                />
-                                <button
-                                    type="submit"
-                                    className="flex-none rounded-md bg-white py-2.5 px-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                >
-                                    Notify me
-                                </button>
-                            </form> */}
-                            <NewsletterForm />
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div className="h-screen">
+                <DataTable />
+            </div>
+            {/* below is just some additional design stuff */}
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
                     className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
@@ -262,5 +177,8 @@ export default function GetNotified() {
                 </svg>
             </div>
         </div>
+        // <div>
+        //     <DataTable />
+        // </div>
     );
 }
