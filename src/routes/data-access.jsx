@@ -123,19 +123,15 @@ export default function GetNotified() {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/25">
                                 <div className="space-y-2 py-6">
-                                    {navigation.map(
-                                        (
-                                            item // <a key={`${item.name}-mobile`} href={item.href} > {item.name} </a>
-                                        ) => (
-                                            <a
-                                                key={`${item.name}-mobile`}
-                                                href={item.href}
-                                                className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
-                                            >
-                                                {item.name}
-                                            </a>
-                                        )
-                                    )}
+                                    {navigation.map((item) => (
+                                        <Link
+                                            key={`${item.name}-mobile`}
+                                            to={item.href}
+                                            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    ))}
                                 </div>
                                 {/* <div className="py-6">
                                     <a

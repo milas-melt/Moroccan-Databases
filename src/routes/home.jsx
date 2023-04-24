@@ -185,7 +185,7 @@ export default function Home() {
                             the root causes of problems in order to identify
                             appropriate solutions. Whether you're an activist,
                             an entrepreneur, a financial analyst or just a
-                            curious person, we hope that you fill find value in
+                            curious person, we hope that you will find value in
                             this repo and share your insights with others.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
