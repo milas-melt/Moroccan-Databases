@@ -2,7 +2,7 @@ const data = [
     {
         title: "Morocco's open data portal",
         source: "Morocco's open data portal (no date) ACCUEIL | Portail de l'Open Data au Maroc. Available at: https://data.gov.ma/ (Accessed: February 26, 2023).",
-        link: "lindsay.walton@example.com",
+        link: "https://data.gov.ma/",
         type: "Databases",
     },
 
